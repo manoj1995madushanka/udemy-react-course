@@ -14,6 +14,17 @@ const element = <h1>hello {user.name}, email to {user.email}</h1>
 var numbers = [1,2,3,4];
 var doubleNumbers = numbers.map((eachNumber)=>eachNumber*2+";");
 
+
+// timer that auto update using set interval
+var counter =0;
+function updateCount()
+{
+  console.log("updating.." + counter++);
+}
+
+setInterval(updateCount,1000);// call updateCounter after every second
+
+
 ReactDOM.render(
   //element
   <h1>double numbers : {doubleNumbers}</h1>
