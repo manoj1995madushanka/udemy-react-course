@@ -4,10 +4,20 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+const user = {
+  name:"manoj",
+  email:"test.com"
+}
+
+const element = <h1>hello {user.name}, email to {user.email}</h1>
+
+var numbers = [1,2,3,4];
+var doubleNumbers = numbers.map((eachNumber)=>eachNumber*2+";");
+
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  //element
+  <h1>double numbers : {doubleNumbers}</h1>
+  ,
   document.getElementById('root')
 );
 
